@@ -60,67 +60,80 @@ The global application and cloud marketplace sector represents a multi-hundred-b
 
 ## Open-Source GitHub Projects
 
+- **[Medusa](https://github.com/medusajs/medusa)** [![GitHub stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers)
 
-
-- **[Mercur](https://github.com/mercurjs/mercur)**
-
-  **Open-source marketplace platform built on MedusaJS** (license per repo) — **the most purpose-built open-source application marketplace engine** for multi-vendor commerce, with production-ready B2C support . **Features**: **Vendor onboarding and management** with dedicated vendor panel for products, orders, and store settings; **admin panel** for categories, vendors, commissions, and rules; **offer-based selling**—sellers list offers against master products with their own SKU, price, and stock; **checkout splitting**—one payment becomes one order per seller; **commission computation per order**; **Stripe Connect payouts** to seller accounts on a schedule; customizable storefronts for B2B and B2C; built-in Stripe and Resend integrations . **Tech stack**: MedusaJS 2.0 (Node.js, TypeScript), PostgreSQL, Redis. **Deploy**: Self-hosted (PostgreSQL + Redis + Mercur API server + worker + admin + vendor panel) or Medusa Cloud . **Trade-off**: **Commerce marketplace engine, not a SaaS app store**—it handles product offers, orders, and payouts, not app manifests, plugin lifecycles, or developer SDKs for app packaging. You own infrastructure, vendor onboarding policy, and payment processor relationships. No transaction fees on GMV . **Best for**: operators wanting full source control over a multi-vendor marketplace with automated commissions and Stripe Connect payouts—without per-transaction platform fees.
-
-
-
-- **[Medusa](https://github.com/medusajs/medusa)**
-
-  **Open-source headless commerce platform** (MIT) — **the foundation Mercur is built upon**, with modular commerce primitives for building custom marketplaces . **Features**: Modular architecture with separate modules for cart, payment, fulfillment, and pricing; API-first; TypeScript stack; the building blocks for advanced ecommerce stores, marketplaces, or any product needing commerce primitives . **Tech stack**: Node.js, TypeScript, PostgreSQL. **Deploy**: Self-hosted or Medusa Cloud. **Trade-off**: **Not a marketplace out of the box**—you build vendor management, commissions, and payouts yourself. Mercur adds those layers. **Best for**: developers wanting a modern, MIT-licensed commerce foundation to build a custom marketplace upon.
+  **Open-source headless commerce platform** (MIT) — **the foundation Mercur is built upon**, with modular commerce primitives for building custom marketplaces. **Features**: Modular architecture with separate modules for cart, payment, fulfillment, and pricing; API-first; TypeScript stack; the building blocks for advanced ecommerce stores, marketplaces, or any product needing commerce primitives. **Tech stack**: Node.js, TypeScript, PostgreSQL. **Deploy**: Self-hosted or Medusa Cloud. **Trade-off**: **Not a marketplace out of the box**—you build vendor management, commissions, and payouts yourself. Mercur adds those layers. **Best for**: developers wanting a modern, MIT-licensed commerce foundation to build a custom marketplace upon.
 
 
 
-- **[Saleor](https://github.com/saleor/saleor)**
+- **[Bagisto](https://github.com/bagisto/bagisto)** [![GitHub stars](https://img.shields.io/github/stars/bagisto/bagisto?style=social&color=white)](https://github.com/bagisto/bagisto/stargazers)
 
-  **GraphQL-first headless commerce platform** (BSD-3-Clause) — **a mature composable framework with a growing app ecosystem** . **Features**: Single GraphQL endpoint; official TypeScript/JavaScript SDK; the **`saleor/apps` repository** is a central space for Saleor Apps, integrations, and the App Store; apps are deployed separately and communicate with Saleor via API . **Tech stack**: Python (Django), GraphQL, PostgreSQL. **Deploy**: Self-hosted or Saleor Cloud. **Trade-off**: **Platform, not a marketplace engine**—Saleor Apps is an app ecosystem, but multi-vendor marketplace capabilities (vendor onboarding, commissions, payouts) require custom development or third-party plugins. **Best for**: teams wanting a GraphQL-native commerce backend with an app ecosystem model.
-
-
-
-- **[GrandNode](https://github.com/grandnode/grandnode2)**
-
-  **Open-source cross-platform eCommerce platform** (GPL-3.0) — **supports multi-vendor business models on .NET Core and MongoDB** . **Features**: Explicitly supports B2B, B2C, Multi-Store, **Multi-Vendor**, Multi-Tenant, Multi-Language, and Multi-Currency models; built for ASP.NET Core with MongoDB/NoSQL storage . **Tech stack**: C# (.NET Core), MongoDB / Azure CosmosDB / Amazon DocumentDB / LiteDB. **Deploy**: Self-hosted. **Trade-off**: **.NET ecosystem-specific**—multi-vendor support is a business model option, but vendor governance and commission automation depth requires evaluation against your requirements. **Best for**: .NET teams wanting an open-source commerce platform with multi-vendor support in a NoSQL stack.
+  **Open-source Laravel eCommerce and multi-vendor marketplace platform** (MIT) — **a full-stack option with a dedicated Multi-Vendor Marketplace extension**. **Features**: Admin manages sellers, commissions, product approvals, and order handling; vendors get a dedicated dashboard for catalog, orders, and transactions; also supports B2B, multi-tenant SaaS marketplaces, POS, and headless commerce. **Tech stack**: Laravel (PHP), Vue.js. **Deploy**: Self-hosted (Docker one-liner available). **Trade-off**: **Full platform adoption required**—the marketplace is an extension, not a bolt-on to an existing store. Commission and payout automation depth varies by configuration. **Best for**: Laravel developers wanting a batteries-included commerce platform with native multi-vendor capabilities.
 
 
 
-- **[Open VSX](https://github.com/eclipse/openvsx)**
+- **[Saleor](https://github.com/saleor/saleor)** [![GitHub stars](https://img.shields.io/github/stars/saleor/saleor?style=social&color=white)](https://github.com/saleor/saleor/stargazers)
 
-  **Vendor-neutral open-source extension registry** (EPL-2.0) — **the most mature open-source application/extension marketplace infrastructure**, now at **1.0.0** with **600M+ extension downloads per month** . **Features**: Extension publishing, discovery, and distribution for VS Code-compatible editors (VSCodium, Eclipse Theia, Gitpod, Google Cloud Workstations, Salesforce Code Builder, SAP Business Application Studio); web application for browsing; CLI for publishing; TLS-secured Redis connections; read-only mode; security hardening . **Tech stack**: Java (Eclipse Vert.x), PostgreSQL, Redis. **Deploy**: Self-hosted (Docker) or public Open VSX Registry. **Trade-off**: **VS Code extension ecosystem specific**—not a general-purpose app marketplace. No transaction processing, vendor payouts, or multi-vendor commerce features. **Best for**: editor/IDE vendors wanting to offer a vendor-neutral extension registry independent of Microsoft's marketplace.
-
-
-
-- **[ownCloud Marketplace](https://github.com/owncloud/marketplace)**
-
-  **Backend-free, Git-backed app marketplace** — **the most radical open-source marketplace architecture** found in this research . **Features**: **Zero backend, zero database, zero server-side processing**—the Git repository is the source of truth; the catalogue is static JSON; **publishing an app is a pull request**; review happens on GitHub in public; the static site regenerates on merge. 42 apps, 324 releases, 36 publishers, 8 categories, plus 13 web extensions. Security properties follow from architecture: no server to compromise, no database to exfiltrate, no session tokens to steal . **Tech stack**: Static site generation, GitHub repository. **Deploy**: Static hosting (GitHub Pages or any static host). **Trade-off**: **Distribution only**—no payments, no vendor payouts, no multi-vendor commerce. It is a catalogue for free apps and extensions. **Best for**: open-source projects and foundations wanting a transparent, auditable, backend-free marketplace where publishing is a PR and the rules are public.
+  **GraphQL-first headless commerce platform** (BSD-3-Clause) — **a mature composable framework with a growing app ecosystem**. **Features**: Single GraphQL endpoint; official TypeScript/JavaScript SDK; the **`saleor/apps` repository** is a central space for Saleor Apps, integrations, and the App Store; apps are deployed separately and communicate with Saleor via API. **Tech stack**: Python (Django), GraphQL, PostgreSQL. **Deploy**: Self-hosted or Saleor Cloud. **Trade-off**: **Platform, not a marketplace engine**—Saleor Apps is an app ecosystem, but multi-vendor marketplace capabilities (vendor onboarding, commissions, payouts) require custom development or third-party plugins. **Best for**: teams wanting a GraphQL-native commerce backend with an app ecosystem model.
 
 
 
-- **[Bagisto](https://github.com/bagisto/bagisto)**
+- **[Spree](https://github.com/spree/spree)** [![GitHub stars](https://img.shields.io/github/stars/spree/spree?style=social&color=white)](https://github.com/spree/spree/stargazers)
 
-  **Open-source Laravel eCommerce and multi-vendor marketplace platform** (license per repo) — **a full-stack option with a dedicated Multi Vendor Marketplace extension** . **Features**: Admin manages sellers, commissions, product approvals, and order handling; vendors get a dedicated dashboard for catalog, orders, and transactions; also supports B2B, multi-tenant SaaS marketplaces, POS, and headless commerce . **Tech stack**: Laravel (PHP), Vue.js. **Deploy**: Self-hosted (Docker one-liner available). **Trade-off**: **Full platform adoption required**—the marketplace is an extension, not a bolt-on to an existing store. Commission and payout automation depth varies by configuration. **Best for**: Laravel developers wanting a batteries-included commerce platform with native multi-vendor capabilities.
+  **Open-source headless commerce and multi-vendor marketplace framework** (BSD-3-Clause) — **one of the most battle-tested open-source commerce platforms** with a dedicated `spree_multi_vendor` extension. **Features**: Multi-vendor marketplace support with independent vendor dashboards, commission structures, order splitting across vendors, and global admin governance; REST APIs and TypeScript Next.js storefronts; 0% platform fees. **Tech stack**: Ruby on Rails, Next.js / React, PostgreSQL. **Deploy**: Self-hosted or Docker. **Trade-off**: Requires Rails familiarity; vendor commission workflows require configuration via the multi-vendor extension. **Best for**: developers and enterprises wanting a mature, proven multi-vendor commerce backend.
+
+
+
+- **[Vendure](https://github.com/vendure-ecommerce/vendure)** [![GitHub stars](https://img.shields.io/github/stars/vendure-ecommerce/vendure?style=social&color=white)](https://github.com/vendure-ecommerce/vendure/stargazers)
+
+  **Headless GraphQL commerce framework built on NestJS & TypeScript** (MIT) — **extensible platform with native multi-vendor / marketplace plugin patterns**. **Features**: Native multi-channel support where channels represent separate vendor stores; shared or isolated inventory; custom permissions for vendor administrators; extensible GraphQL APIs; Stripe Connect plugin support for automated vendor payouts. **Tech stack**: TypeScript, NestJS, GraphQL, PostgreSQL / MySQL. **Deploy**: Self-hosted or Docker. **Trade-off**: Multi-vendor workflows are modeled via Channels and custom plugins rather than a turnkey monolithic marketplace dashboard. **Best for**: TypeScript developers wanting an elegant, high-performance GraphQL architecture to power custom multi-vendor marketplaces.
+
+
+
+- **[F-Droid](https://github.com/f-droid/fdroidclient)** [![GitHub stars](https://img.shields.io/github/stars/f-droid/fdroidclient?style=social&color=white)](https://github.com/f-droid/fdroidclient/stargazers)
+
+  **Open-source installable application catalogue and distribution platform for Android** (GPL-3.0) — **the preeminent open-source mobile app store and repository client**. **Features**: Decentralized repository specification; client for browsing, installing, updating, and verifying applications from multiple independent repositories; anti-feature warnings for tracking/ads; automated signing and reproducible build validation infrastructure via `fdroidserver`. **Tech stack**: Java / Kotlin, Android SDK, Python (build server). **Deploy**: Client on Android; self-hosted repositories via `fdroidserver`. **Trade-off**: Focused strictly on free and open-source Android APK distribution; no built-in commercial payment checkout or vendor monetization. **Best for**: organizations, custom ROM builders, and privacy-first teams needing decentralized, self-hosted application catalog distribution infrastructure.
+
+
+
+- **[Sharetribe](https://github.com/sharetribe/sharetribe)** [![GitHub stars](https://img.shields.io/github/stars/sharetribe/sharetribe?style=social&color=white)](https://github.com/sharetribe/sharetribe/stargazers)
+
+  **Open-source peer-to-peer and multi-vendor marketplace software** (GPL-3.0) — **pioneering marketplace platform powering rental, service, and product exchanges**. **Features**: Complete vendor onboarding, listing management with calendar availability and pricing, built-in review system, customer-to-vendor messaging, payment processing via Stripe, and administrative commission cut configuration. **Tech stack**: Ruby on Rails, React, MySQL. **Deploy**: Self-hosted. **Trade-off**: The open-source community edition (Sharetribe Open Source) represents Sharetribe's classic architecture; enterprise headless capabilities have moved to Sharetribe Flex. **Best for**: operators wanting a quick-to-launch, battle-tested multi-vendor marketplace with built-in transactional booking and commission logic.
+
+
+
+- **[Open VSX](https://github.com/eclipse-openvsx/openvsx)** [![GitHub stars](https://img.shields.io/github/stars/eclipse-openvsx/openvsx?style=social&color=white)](https://github.com/eclipse-openvsx/openvsx/stargazers)
+
+  **Vendor-neutral open-source extension registry** (EPL-2.0) — **the most mature open-source application/extension marketplace infrastructure**, now at **1.0.0** with **600M+ extension downloads per month**. **Features**: Extension publishing, discovery, and distribution for VS Code-compatible editors (VSCodium, Eclipse Theia, Gitpod, Google Cloud Workstations, Salesforce Code Builder, SAP Business Application Studio); web application for browsing; CLI for publishing; TLS-secured Redis connections; read-only mode; security hardening. **Tech stack**: Java (Eclipse Vert.x), PostgreSQL, Redis. **Deploy**: Self-hosted (Docker) or public Open VSX Registry. **Trade-off**: **VS Code extension ecosystem specific**—not a general-purpose app marketplace. No transaction processing, vendor payouts, or multi-vendor commerce features. **Best for**: editor/IDE vendors wanting to offer a vendor-neutral extension registry independent of Microsoft's marketplace.
+
+
+
+- **[Mercur](https://github.com/mercurjs/mercur)** [![GitHub stars](https://img.shields.io/github/stars/mercurjs/mercur?style=social&color=white)](https://github.com/mercurjs/mercur/stargazers)
+
+  **Open-source marketplace platform built on MedusaJS** (license per repo) — **the most purpose-built open-source application marketplace engine** for multi-vendor commerce, with production-ready B2C support. **Features**: **Vendor onboarding and management** with dedicated vendor panel for products, orders, and store settings; **admin panel** for categories, vendors, commissions, and rules; **offer-based selling**—sellers list offers against master products with their own SKU, price, and stock; **checkout splitting**—one payment becomes one order per seller; **commission computation per order**; **Stripe Connect payouts** to seller accounts on a schedule; customizable storefronts for B2B and B2C; built-in Stripe and Resend integrations. **Tech stack**: MedusaJS 2.0 (Node.js, TypeScript), PostgreSQL, Redis. **Deploy**: Self-hosted (PostgreSQL + Redis + Mercur API server + worker + admin + vendor panel) or Medusa Cloud. **Trade-off**: **Commerce marketplace engine, not a SaaS app store**—it handles product offers, orders, and payouts, not app manifests, plugin lifecycles, or developer SDKs for app packaging. You own infrastructure, vendor onboarding policy, and payment processor relationships. No transaction fees on GMV. **Best for**: operators wanting full source control over a multi-vendor marketplace with automated commissions and Stripe Connect payouts—without per-transaction platform fees.
+
+
+
+- **[GrandNode](https://github.com/grandnode/grandnode2)** [![GitHub stars](https://img.shields.io/github/stars/grandnode/grandnode2?style=social&color=white)](https://github.com/grandnode/grandnode2/stargazers)
+
+  **Open-source cross-platform eCommerce platform** (GPL-3.0) — **supports multi-vendor business models on .NET Core and MongoDB**. **Features**: Explicitly supports B2B, B2C, Multi-Store, **Multi-Vendor**, Multi-Tenant, Multi-Language, and Multi-Currency models; built for ASP.NET Core with MongoDB/NoSQL storage. **Tech stack**: C# (.NET Core), MongoDB / Azure CosmosDB / Amazon DocumentDB / LiteDB. **Deploy**: Self-hosted. **Trade-off**: **.NET ecosystem-specific**—multi-vendor support is a business model option, but vendor governance and commission automation depth requires evaluation against your requirements. **Best for**: .NET teams wanting an open-source commerce platform with multi-vendor support in a NoSQL stack.
+
+
+
+- **[ownCloud Marketplace](https://github.com/owncloud/marketplace)** [![GitHub stars](https://img.shields.io/github/stars/owncloud/marketplace?style=social&color=white)](https://github.com/owncloud/marketplace/stargazers)
+
+  **Backend-free, Git-backed app marketplace** — **the most radical open-source marketplace architecture** found in this research. **Features**: **Zero backend, zero database, zero server-side processing**—the Git repository is the source of truth; the catalogue is static JSON; **publishing an app is a pull request**; review happens on GitHub in public; the static site regenerates on merge. 42 apps, 324 releases, 36 publishers, 8 categories, plus 13 web extensions. Security properties follow from architecture: no server to compromise, no database to exfiltrate, no session tokens to steal. **Tech stack**: Static site generation, GitHub repository. **Deploy**: Static hosting (GitHub Pages or any static host). **Trade-off**: **Distribution only**—no payments, no vendor payouts, no multi-vendor commerce. It is a catalogue for free apps and extensions. **Best for**: open-source projects and foundations wanting a transparent, auditable, backend-free marketplace where publishing is a PR and the rules are public.
 
 
 
 ### Additional Strong Open-Source Options
 
-
-
-- **Mobazha** — Open-source peer-to-peer commerce platform (Go, v0.3.0-rc.1) with storefronts, marketplaces, and crypto payments (BTC, BCH, LTC, BNB Chain). **Note**: Decentralized commerce, not a traditional app marketplace—vendors own their backend, and discovery happens across a network rather than a central catalogue . **Best for**: operators wanting a decentralized, vendor-owned marketplace model.
-
-- **AppNest** — App store platform specification (Codeberg) with moderation, transparency, API, and plugin architecture. **Note**: **Specification/design document**, not a working implementation—describes intended features for an international app ecosystem . **Best for**: reference for app store requirements and governance design.
-
-- **Open Store** — Decentralized blockchain app store (MIT). **Note**: Frontend landing page and blockchain-based distribution concept; no transaction processing or vendor payouts. **Best for**: exploring decentralized app distribution models .
-
-- **Gerege Nexus App Store** — Go-based app store modules (registry, publisher, review, SSO clients) on the Gerege Nexus platform. **Note**: Early-stage (v0.1.0), platform-dependent, limited documentation . **Best for**: reference for modular app store architecture in Go.
-
-
+- **Mobazha** — Open-source peer-to-peer commerce platform (Go, v0.3.0-rc.1) with storefronts, marketplaces, and crypto payments (BTC, BCH, LTC, BNB Chain). **Note**: Decentralized commerce, not a traditional app marketplace—vendors own their backend, and discovery happens across a network rather than a central catalogue. **Best for**: operators wanting a decentralized, vendor-owned marketplace model.
+- **AppNest** — App store platform specification (Codeberg) with moderation, transparency, API, and plugin architecture. **Note**: **Specification/design document**, not a working implementation—describes intended features for an international app ecosystem. **Best for**: reference for app store requirements and governance design.
+- **Open Store** — Decentralized blockchain app store (MIT). **Note**: Frontend landing page and blockchain-based distribution concept; no transaction processing or vendor payouts. **Best for**: exploring decentralized app distribution models.
+- **Gerege Nexus App Store** — Go-based app store modules (registry, publisher, review, SSO clients) on the Gerege Nexus platform. **Note**: Early-stage (v0.1.0), platform-dependent, limited documentation. **Best for**: reference for modular app store architecture in Go.
 
 **Frameworks for building custom systems**: Combine **Mercur** as the multi-vendor commerce engine for paid app or plugin distribution with **Open VSX** as the registry infrastructure for extension discovery, **ownCloud Marketplace** as the federated Git-backed catalogue pattern for free apps, and **Medusa** or **Saleor** as the commerce foundation—creating an application marketplace stack. **None of these provide the security review pipeline, enterprise procurement integration, or buyer network effects** of Salesforce AppExchange or AWS Marketplace; those require commercial platforms or significant custom development.
-
-
 
 ## How to Contribute
 
