@@ -32,78 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global application and cloud marketplace sector represents a multi-hundred-billion-dollar transactional ecosystem (with hyperscaler and B2B software marketplaces driving over $50B+ in software transactions within a $1T+ broader cloud market). The sector exhibits a distinct bifurcated structure: **moderately fragmented** across diverse vertical SaaS and developer tool niches, yet **highly concentrated** at the platform gatekeeper layer where hyperscalers (AWS, Microsoft, Google) and core enterprise ecosystem anchors (Salesforce, Shopify, Atlassian) create near 'winner-take-all' gravity through consolidated enterprise procurement and captive buyer networks.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Salesforce AppExchange](https://appexchange.salesforce.com/)**
-
-  **Enterprise app marketplace** for the Salesforce ecosystem with security review, partner program, and billing integration. **Pricing**: Listing fees and revenue share vary; security review required. **Free tier**: Free apps available; commercial listings paid. **Best for**: ISVs building Salesforce apps wanting enterprise distribution with trust signals.
-
-
-
-- **[Shopify App Store](https://apps.shopify.com/)**
-
-  **Shopify's official app marketplace** for merchants to discover and install apps. **Pricing**: Revenue share model (Shopify takes a percentage of app revenue). **Free tier**: Free app listings available. **Best for**: developers building Shopify apps wanting distribution to millions of merchants with integrated billing.
-
-
-
-- **[Atlassian App Hub](https://marketplace.atlassian.com/)**
-
-  **App marketplace** for Jira, Confluence, and other Atlassian products. **Pricing**: Revenue share model; free and paid apps supported. **Free tier**: Free app listings available. **Best for**: developers building Atlassian ecosystem extensions wanting enterprise user access.
-
-
-
-- **[AWS Marketplace](https://aws.amazon.com/marketplace)**
-
-  **Cloud software and services marketplace** for AWS customers with enterprise procurement integration. **Pricing**: AWS takes a percentage of sales; private offers available. **Free tier**: Free trials and free products available. **Best for**: software vendors wanting enterprise distribution through AWS procurement.
-
-
-
-- **[Microsoft Commercial Marketplace](https://azuremarketplace.microsoft.com/)**
-
-  **Unified marketplace** for Azure, Dynamics 365, Microsoft 365, and Power Platform solutions. **Pricing**: Revenue share model; private offers available. **Free tier**: Free trials available. **Best for**: Microsoft partners wanting distribution across the Microsoft ecosystem.
-
-
-
-- **[HubSpot App Marketplace](https://ecosystem.hubspot.com/marketplace/apps)**
-
-  **App marketplace** for HubSpot CRM ecosystem. **Pricing**: Revenue share model; free apps available. **Free tier**: Yes. **Best for**: developers building HubSpot integrations for CRM users.
-
-
-
-- **[Google Workspace Marketplace](https://workspace.google.com/marketplace)**
-
-  **App marketplace** for Google Workspace integrations. **Pricing**: Free listings; Google takes a share of paid app revenue. **Free tier**: Free app listings available. **Best for**: developers building Google Workspace add-ons.
-
-
-
-- **[ServiceNow Store](https://store.servicenow.com/)**
-
-  **App marketplace** for ServiceNow platform. **Pricing**: Revenue share model; certified apps available. **Free tier**: Free apps available. **Best for**: partners building ServiceNow applications for enterprise customers.
-
-
-
-- **[Slack App Directory](https://slack.com/apps)**
-
-  **Official directory of publicly available Slack apps**. **Pricing**: Free listings; paid apps handled through Slack billing. **Free tier**: Yes. **Best for**: developers building Slack integrations wanting discovery by workspace admins.
-
-
-
-- **[Zendesk Marketplace](https://www.zendesk.com/marketplace/)**
-
-  **App marketplace** for Zendesk customer service platform. **Pricing**: Revenue share model; free apps available. **Free tier**: Yes. **Best for**: developers building Zendesk integrations for support teams.
-
+| Company / Marketplace | Company Size (Market Cap / Valuation / Revenue) | Pricing | Free Tier / Trial Limit | Description & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Commercial Marketplace](https://azuremarketplace.microsoft.com/)** | ~$3.1T Market Cap | **3% standard store service fee** on transactable sales; 0% fee on BYOL (Bring Your Own License) listings; custom private offer renewals discounted by up to 50%. | **Free forever listing for BYOL/free apps**; paid transactable SaaS offers can configure custom **30-day or 90-day free trials**. | Unified enterprise marketplace for Azure, Dynamics 365, Microsoft 365, and Power Platform solutions with enterprise MACC drawdown. |
+| **[Google Workspace Marketplace](https://workspace.google.com/marketplace)** | ~$2.1T Market Cap (Alphabet) | **$0 developer registration fee**; **0% revenue share** (Google does not take a cut; developers bill independently via external processors such as Stripe). | **Free forever listing**; developers can publish unlimited free add-ons or manage their own external freemium/free trial tiers. | Official directory for Google Workspace add-ons (Docs, Sheets, Drive, Gmail) connecting to billions of Google Workspace accounts. |
+| **[AWS Marketplace](https://aws.amazon.com/marketplace)** | ~$2.0T Market Cap (Amazon) | **3% listing fee** for SaaS and Data Exchange public offers (scales down to 2% for contracts $1M–$10M, 1.5% for $10M+ or renewals); 20% for AMI/container server products. | **Free forever tier for free/BYOL products**; paid SaaS listings can offer a **30-day free trial** with standard service quotas. | Premier cloud marketplace for ISVs delivering solutions to AWS enterprise customers with consolidated EDP/PPA billing. |
+| **[Salesforce AppExchange](https://appexchange.salesforce.com/)** | ~$280B Market Cap | **$150/year listing fee** per paid app + **$2,550+ one-time security review fee** per paid app submission; **15% Net Revenue Share (PNR)** under ISVforce (or 25% for OEM embedded apps). | **Free forever tier for 100% free apps** (exempt from the $150/yr listing fee and $2,550 security review fee); paid apps can offer a **30-day free trial**. | Enterprise app ecosystem for Salesforce CRM, featuring trusted partner tiering, enterprise procurement, and unified checkout. |
+| **[ServiceNow Store](https://store.servicenow.com/)** | ~$190B Market Cap | **$5,000/year Technology Partner Program (TPP) fee** + **15% to 30% revenue share** on Store transactions (depending on partner-sourced vs. co-sell track). | **Free forever listing for internal/free utility integrations** (requires active TPP partner membership); paid apps can offer a **30-day free trial**. | Enterprise workflow marketplace for certified ServiceNow digital applications, ITOM/ITSM tools, and enterprise automation bots. |
+| **[Shopify App Store](https://apps.shopify.com/)** | ~$115B Market Cap | **$19 one-time registration fee**; **0% revenue share on the first $1,000,000 USD** in lifetime gross revenue, then **15% revenue share** on revenue above $1M (+ 2.9% payment processing fee). | **Free forever tier for 100% free apps**; paid apps can set configurable free trials (commonly **7-day, 14-day, or 30-day free trial plans**). | Largest commercial commerce app directory with direct merchant billing integration across millions of Shopify storefronts. |
+| **[Atlassian App Hub](https://marketplace.atlassian.com/)** | ~$45B Market Cap | **0% revenue share on first $1M lifetime revenue for Forge apps**, then **17% standard fee** (vendor keeps 83%); **25% fee for Connect apps** (vendor keeps 75%). | **Free forever tier for free apps** (apps free for all tiers or free up to 10 users); paid cloud apps include an automatic **30-day free trial**. | Leading marketplace for Jira, Confluence, and Bitbucket plugins with native cloud Forge sandboxing and enterprise customer reach. |
+| **[HubSpot App Marketplace](https://ecosystem.hubspot.com/marketplace/apps)** | ~$30B Market Cap | **$0 listing fee**; **0% revenue share** (HubSpot charges no commission on app sales; developers manage subscriptions directly via Stripe/external billing). | **Free forever listing**; developers can distribute completely free apps indefinitely or offer external trial periods without platform cut. | CRM integration marketplace connecting third-party tools to millions of HubSpot marketing, sales, and service hubs. |
+| **[Slack App Directory](https://slack.com/apps)** | ~$27.7B Acquisition (Salesforce) | **$0 developer registration fee**; **0% revenue share** (Slack does not process in-app payments; developers monetize externally via custom Stripe/SaaS billing). | **Free forever listing**; developers can offer free apps forever or external trial subscriptions mapped to Slack Workspace IDs. | Central discovery directory for Slack bots, webhooks, and productivity tools used across hundreds of thousands of workplaces. |
+| **[Zendesk Marketplace](https://www.zendesk.com/marketplace/)** | ~$10.2B Private Acquisition (Hellman & Friedman) | **$0 listing fee**; **0% platform revenue share** (apps process payments directly through vendor-connected Stripe accounts; vendor pays standard Stripe fees). | **Free forever tier for free apps and themes**; paid apps feature a standardized **14-day free trial** managed via Stripe integration. | Customer service and support app directory for Zendesk Support, Chat, and Sunshine platform extensions. |
 
 
 ## Open-Source GitHub Projects
